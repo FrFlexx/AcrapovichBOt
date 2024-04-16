@@ -4,12 +4,12 @@ import google.generativeai as genai
 import os
 
 # Установка токена бота
-token = '7127389421:AAGuMqls2lUKMDVgM12l0CcI12FKILH6TxE'  # Replace with your token
+token = ''  # Replace with your token
 bot = telebot.TeleBot(token)
 
 # Configure GeminiAI model
-GEMINI_API_KEY = os.getenv('AIzaSyBcF3qDqFjYzFRtO7SmLl_wvFliM-xdfM8')  # Replace with your Gemini API key
-genai.configure(api_key='AIzaSyBcF3qDqFjYzFRtO7SmLl_wvFliM-xdfM8')
+GEMINI_API_KEY = os.getenv('')  # Replace with your Gemini API key
+genai.configure(api_key='')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
